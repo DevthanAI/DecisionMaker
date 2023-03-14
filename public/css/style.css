@@ -41,3 +41,37 @@
     line-height: 1.2;
     color: #FFFFFF;
 }
+
+.white-rectangle-1 {
+    position: absolute;
+    width: 25%;
+    height: 60%;
+    left: 7%;
+    top: 150px;
+    background: #FFFFFF;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.white-rectangle-2 {
+    position: absolute;
+    width: 25%;
+    height: 60%;
+    left: 39%;
+    top: 150px;
+    background: #FFFFFF;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+
+.white-rectangle-3 {
+    position: absolute;
+    width: 25%;
+    height: 60%;
+    left: 70%;
+    top: 150px;
+    background: #FFFFFF;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
