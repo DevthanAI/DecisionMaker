@@ -1,24 +1,23 @@
 function submitForm() {
-    const choice1_pro = document.getElementById('choice1_pro').value;
-    const choice1_con = document.getElementById('choice1_con').value;
-    const choice1_pro_weight = document.getElementById('choice1_pro_weight').value;
-    const choice1_con_weight = document.getElementById('choice1_con_weight').value;
+    const getFormData = (choice) => ({
+        pro: parseInt(document.getElementById(`${choice}_pro`).value),
+        con: parseInt(document.getElementById(`${choice}_con`).value),
+        pro_weight: parseInt(document.getElementById(`${choice}_pro_weight`).value),
+        con_weight: parseInt(document.getElementById(`${choice}_con_weight`).value)
+    });
 
-    const choice2_pro = document.getElementById('choice2_pro').value;
-    const choice2_con = document.getElementById('choice2_con').value;
-    const choice2_pro_weight = document.getElementById('choice2_pro_weight').value;
-    const choice2_con_weight = document.getElementById('choice2_con_weight').value;
+    const choice1 = getFormData('choice1');
+    const choice2 = getFormData('choice2');
+
+    const choice1_sum = choice1.pro * choice1.pro_weight + choice1.con * choice1.con_weight - 1;
+    const choice2_sum = choice2.pro * choice2.pro_weight + choice2.con * choice2.con_weight - 1;
 
     const resultDiv = document.getElementById('result');
-
-    const choice1_sum = parseInt(choice1_pro) * parseInt(choice1_pro_weight) + parseInt(choice1_con) * parseInt(choice1_con_weight) - 1;
-    const choice2_sum = parseInt(choice2_pro) * parseInt(choice2_pro_weight) + parseInt(choice2_con) * parseInt(choice2_con_weight) - 1;
-
     if (choice1_sum > choice2_sum) {
-        resultDiv.innerHTML = 'Choice 1 is better';
+        resultDiv.textContent = 'Choice 1 is better';
     } else if (choice1_sum < choice2_sum) {
-        resultDiv.innerHTML = 'Choice 2 is better';
+        resultDiv.textContent = 'Choice 2 is better';
     } else {
-        resultDiv.innerHTML = 'Both are equal';
+        resultDiv.textContent = 'Both are equal';
     }
 }
