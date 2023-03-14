@@ -3,7 +3,8 @@
 Decision making made easier with weight analysis.
 
 ## Figma design  
-https://www.figma.com/file/LWaINOthgcSqW2MTXfFqNd/DecisionMaker?node-id=0%3A1&t=CjAo81nEICyTEEM5-1  
+
+<https://www.figma.com/file/LWaINOthgcSqW2MTXfFqNd/DecisionMaker?node-id=0%3A1&t=CjAo81nEICyTEEM5-1>  
 
 ## Local development
 
