@@ -6,6 +6,9 @@ Decision making made easier with weight analysis.
 
 <https://www.figma.com/file/LWaINOthgcSqW2MTXfFqNd/DecisionMaker?node-id=0%3A1&t=CjAo81nEICyTEEM5-1>  
 
+<img width="1728" alt="Main Page" src="https://user-images.githubusercontent.com/104475739/225183898-080e6db3-b75e-4b43-9b1a-950b39cdc5bd.png">
+
+
 ## Local development
 
 Node.js installation is required.  
