@@ -118,3 +118,35 @@
     padding-left: 50%;
     border-right: 1px solid #B8B7B7;
 }
+
+.light-pink-pro {
+    position: absolute;
+    width: 90%;
+    height: auto;
+    left: -15%;
+    top: 20%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3vw;
+    line-height: 73px;
+    text-align: center;
+
+    color: #FAB5D6;
+}
+
+.light-pink-con {
+    position: absolute;
+    width: 90%;
+    height: auto;
+    left: 25%;
+    top: 20%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3vw;
+    line-height: 73px;
+    text-align: center;
+
+    color: #FAB5D6;
+}
