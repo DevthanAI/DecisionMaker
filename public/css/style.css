@@ -91,3 +91,11 @@
 
     color: #F281B7;
 }
+
+.laying-woman {
+    position: absolute;
+    height: 30%;
+    top: 65%;
+    left: 70%;
+    z-index: 1;
+}
