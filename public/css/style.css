@@ -85,7 +85,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 4vw;
+    font-size: 3vw;
     line-height: 73px;
     text-align: center;
 
@@ -98,4 +98,23 @@
     top: 65%;
     left: 70%;
     z-index: 1;
+}
+
+.hori-line {
+    position: relative;
+    width: 70%;
+    height: 0px;
+    left: 15%;
+    top: 35%;
+    border-bottom: 1px solid #B8B7B7;
+}
+
+.verti-line {
+    position: relative;
+    z-index: 1;
+    width: 1px;
+    height: 65%;
+    top: 25%;
+    padding-left: 50%;
+    border-right: 1px solid #B8B7B7;
 }

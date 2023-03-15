@@ -8,7 +8,6 @@ Decision making made easier with weight analysis.
 
 <img width="1728" alt="Main Page" src="https://user-images.githubusercontent.com/104475739/225183898-080e6db3-b75e-4b43-9b1a-950b39cdc5bd.png">
 
-
 ## Local development
 
 Node.js installation is required.  
