@@ -80,13 +80,14 @@
     position: absolute;
     width: 90%;
     height: auto;
-    left: 17%;
+    left: 5%;
     top: 5%;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 4vw;
     line-height: 73px;
+    text-align: center;
 
     color: #F281B7;
 }
