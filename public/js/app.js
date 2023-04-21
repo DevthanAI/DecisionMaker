@@ -47,20 +47,27 @@ function addChoice() {
         <input id="choice${document.querySelectorAll("section").length + 1}_name" type="text" required>
       </h2>
       <div>
-        <label for="choice${document.querySelectorAll("section").length + 1}_pro_feat">What's good about this?</label>
-        <input id="choice${document.querySelectorAll("section").length + 1}_pro_feat" type="text" required>
-        <label for="choice${document.querySelectorAll("section").length + 1}_pro">How good?</label>
-        <input id="choice${document.querySelectorAll("section").length + 1}_pro" type="number" required>
-        <label for="choice${document.querySelectorAll("section").length + 1}_pro_weight">How much of a big deal is this?</label>
-        <input id="choice${document.querySelectorAll("section").length + 1}_pro_weight" type="number" required>
-        <br><br>
-        <label for="choice${document.querySelectorAll("section").length + 1}_con_feat">What's bad about this?</label>
-        <input id="choice${document.querySelectorAll("section").length + 1}_con_feat" type="text" required>
-        <label for="choice${document.querySelectorAll("section").length + 1}_con">How bad?</label>
-        <input id="choice${document.querySelectorAll("section").length + 1}_con" type="number" required>
-        <label for="choice${document.querySelectorAll("section").length + 1}_con_weight">How much of a big deal is this?</label>
-        <input id="choice${document.querySelectorAll("section").length + 1}_con_weight" type="number" required>
-        <br><br>
+        <div>
+            <label for="choice${document.querySelectorAll("section").length + 1}_pro_feat">What's good about this?</label>
+            <input id="choice${document.querySelectorAll("section").length + 1}_pro_feat" type="text" required>
+            <br/>
+            <label for="choice${document.querySelectorAll("section").length + 1}_pro">How good?</label>
+            <input id="choice${document.querySelectorAll("section").length + 1}_pro" type="number" required>
+            <br/>
+            <label for="choice${document.querySelectorAll("section").length + 1}_pro_weight">How much of a big deal is this?</label>
+            <input id="choice${document.querySelectorAll("section").length + 1}_pro_weight" type="number" required>
+        </div>
+        </br>
+        <div>
+            <label for="choice${document.querySelectorAll("section").length + 1}_con_feat">What's bad about this?</label>
+            <input id="choice${document.querySelectorAll("section").length + 1}_con_feat" type="text" required>
+            <br/>
+            <label for="choice${document.querySelectorAll("section").length + 1}_con">How bad?</label>
+            <input id="choice${document.querySelectorAll("section").length + 1}_con" type="number" required>
+            <br/>
+            <label for="choice${document.querySelectorAll("section").length + 1}_con_weight">How much of a big deal is this?</label>
+            <input id="choice${document.querySelectorAll("section").length + 1}_con_weight" type="number" required>
+        </div>
       </div>
     `;
     document.getElementById("newChoices").appendChild(newSection);
