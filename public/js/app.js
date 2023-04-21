@@ -1,3 +1,9 @@
+function showVal() {
+    document.getElementById('choice1_pro').addEventListener('input', function () {
+        document.getElementById('choice1_pro_value').textContent = this.value;
+    });
+}
+
 function submitForm() {
     const getFormData = (choice) => ({
         pro: parseInt(document.getElementById(`${choice}_pro`).value),
@@ -52,10 +58,10 @@ function addChoice() {
             <input id="choice${document.querySelectorAll("section").length + 1}_pro_feat" type="text" required>
             <br/>
             <label for="choice${document.querySelectorAll("section").length + 1}_pro">How good?</label>
-            <input id="choice${document.querySelectorAll("section").length + 1}_pro" type="number" required>
+            <input id="choice${document.querySelectorAll("section").length + 1}_pro" type="range" min="0" max="10" required>
             <br/>
             <label for="choice${document.querySelectorAll("section").length + 1}_pro_weight">How much of a big deal is this?</label>
-            <input id="choice${document.querySelectorAll("section").length + 1}_pro_weight" type="number" required>
+            <input id="choice${document.querySelectorAll("section").length + 1}_pro_weight" type="range" min="0" max="10"" required>
         </div>
         </br>
         <div>
@@ -63,10 +69,10 @@ function addChoice() {
             <input id="choice${document.querySelectorAll("section").length + 1}_con_feat" type="text" required>
             <br/>
             <label for="choice${document.querySelectorAll("section").length + 1}_con">How bad?</label>
-            <input id="choice${document.querySelectorAll("section").length + 1}_con" type="number" required>
+            <input id="choice${document.querySelectorAll("section").length + 1}_con" type="range" min="0" max="10" required>
             <br/>
             <label for="choice${document.querySelectorAll("section").length + 1}_con_weight">How much of a big deal is this?</label>
-            <input id="choice${document.querySelectorAll("section").length + 1}_con_weight" type="number" required>
+            <input id="choice${document.querySelectorAll("section").length + 1}_con_weight" type="range" min="0" max="10" required>
         </div>
       </div>
     `;
