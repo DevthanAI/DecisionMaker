@@ -6,18 +6,62 @@ function submitForm() {
         con_weight: parseInt(document.getElementById(`${choice}_con_weight`).value)
     });
 
-    const choice1 = getFormData('choice1');
-    const choice2 = getFormData('choice2');
+    const numChoices = document.querySelectorAll('section').length;
+    const choices = [];
 
-    const choice1_sum = choice1.pro * choice1.pro_weight + choice1.con * choice1.con_weight - 1;
-    const choice2_sum = choice2.pro * choice2.pro_weight + choice2.con * choice2.con_weight - 1;
+    for (let i = 1; i <= numChoices; i++) {
+        const choice = getFormData(`choice${i}`);
+        choices.push(choice);
+    }
+
+    const sums = choices.map((choice) => {
+        return (choice.pro * choice.pro_weight) - (choice.con * choice.con_weight);
+    });
+
+    let bestChoices = [];
+    let bestSum = Number.NEGATIVE_INFINITY;
+
+    for (let i = 0; i < sums.length; i++) {
+        if (sums[i] > bestSum) {
+            bestChoices = [i + 1];
+            bestSum = sums[i];
+        } else if (sums[i] === bestSum) {
+            bestChoices.push(i + 1);
+        }
+    }
 
     const resultDiv = document.getElementById('result');
-    if (choice1_sum > choice2_sum) {
-        resultDiv.textContent = 'Choice 1 is better';
-    } else if (choice1_sum < choice2_sum) {
-        resultDiv.textContent = 'Choice 2 is better';
+    if (bestChoices.length === 1) {
+        resultDiv.textContent = `Choice ${bestChoices[0]} is the best`;
     } else {
-        resultDiv.textContent = 'Both are equal';
+        resultDiv.textContent = `Choices ${bestChoices.join(', ')} are tied for the best`;
     }
+}
+
+
+function addChoice() {
+    var newSection = document.createElement("section");
+    newSection.innerHTML = `
+      <h2>Choice ${document.querySelectorAll("section").length + 1}
+        <label for="choice${document.querySelectorAll("section").length + 1}_name">Name</label>
+        <input id="choice${document.querySelectorAll("section").length + 1}_name" type="text" required>
+      </h2>
+      <div>
+        <label for="choice${document.querySelectorAll("section").length + 1}_pro_feat">What's good about this?</label>
+        <input id="choice${document.querySelectorAll("section").length + 1}_pro_feat" type="text" required>
+        <label for="choice${document.querySelectorAll("section").length + 1}_pro">How good?</label>
+        <input id="choice${document.querySelectorAll("section").length + 1}_pro" type="number" required>
+        <label for="choice${document.querySelectorAll("section").length + 1}_pro_weight">How much of a big deal is this?</label>
+        <input id="choice${document.querySelectorAll("section").length + 1}_pro_weight" type="number" required>
+        <br><br>
+        <label for="choice${document.querySelectorAll("section").length + 1}_con_feat">What's bad about this?</label>
+        <input id="choice${document.querySelectorAll("section").length + 1}_con_feat" type="text" required>
+        <label for="choice${document.querySelectorAll("section").length + 1}_con">How bad?</label>
+        <input id="choice${document.querySelectorAll("section").length + 1}_con" type="number" required>
+        <label for="choice${document.querySelectorAll("section").length + 1}_con_weight">How much of a big deal is this?</label>
+        <input id="choice${document.querySelectorAll("section").length + 1}_con_weight" type="number" required>
+        <br><br>
+      </div>
+    `;
+    document.getElementById("newChoices").appendChild(newSection);
 }

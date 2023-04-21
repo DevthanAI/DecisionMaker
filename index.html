@@ -1,36 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Help Me Decide!</title>
 </head>
 
 <body>
-    <form id="myForm">
-        <label for="choice1">Choice 1</label>
-        <div>
-            Pro <input id="choice1_pro">
-            Weight <input id="choice1_pro_weight">
-            <br><br>
-            Con <input id="choice1_con">
-            Weight <input id="choice1_con_weight">
-            <br><br>
-        </div>
+    <header>
+        <h1>Help Me Decide!</h1>
+    </header>
 
-        <label for="choice2">Choice 2</label>
-        <div>
-            Pro <input id="choice2_pro">
-            Weight <input id="choice2_pro_weight">
-            <br><br>
-            Con <input id="choice2_con">
-            Weight <input id="choice2_con_weight">
-            <br><br>
-        </div>
+    <main>
+        <form id="myForm">
+            <section>
+                <h2>Choice 1
+                    <label for="choice1_name">Name</label>
+                    <input id="choice1_name" type="text" required>
+                </h2>
+                <div>
+                    <label for="choice1_pro_feat">What's good about this?</label>
+                    <input id="choice1_pro_feat" type="text" required>
+                    <label for="choice1_pro">How good?</label>
+                    <input id="choice1_pro" type="number" required>
+                    <label for="choice1_pro_weight">How much of a big deal is this?</label>
+                    <input id="choice1_pro_weight" type="number" required>
+                    <br><br>
+                    <label for="choice1_con_feat">What's bad about this?</label>
+                    <input id="choice1_con_feat" type="text" required>
+                    <label for="choice1_con">How bad?</label>
+                    <input id="choice1_con" type="number" required>
+                    <label for="choice1_con_weight">How much of a big deal is this?</label>
+                    <input id="choice1_con_weight" type="number" required>
+                    <br><br>
+                </div>
+            </section>
 
-        <input type="button" value="Submit" onclick="submitForm()">
-    </form>
-    <div id="result"></div>
-    <script src="/js/app.js" crossorigin="anonymous"> </script>
+            <div id="newChoices"></div>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+            <button type="button" onclick="addChoice()">Add another choice</button>
+        </form>
+
+        <div id="result"></div>
+    </main>
+
+    <script src="/js/app.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
