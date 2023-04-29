@@ -1,11 +1,6 @@
-function showVal() {
-    document.getElementById('choice1_pro').addEventListener('input', function () {
-        document.getElementById('choice1_pro_value').textContent = this.value;
-    });
-}
-
 function submitForm() {
     const getFormData = (choice) => ({
+        name: document.getElementById(`${choice}_name`).value,
         pro: parseInt(document.getElementById(`${choice}_pro`).value),
         con: parseInt(document.getElementById(`${choice}_con`).value),
         pro_weight: parseInt(document.getElementById(`${choice}_pro_weight`).value),
@@ -29,26 +24,25 @@ function submitForm() {
 
     for (let i = 0; i < sums.length; i++) {
         if (sums[i] > bestSum) {
-            bestChoices = [i + 1];
+            bestChoices = [choices[i].name];
             bestSum = sums[i];
         } else if (sums[i] === bestSum) {
-            bestChoices.push(i + 1);
+            bestChoices.push(choices[i].name);
         }
     }
 
     const resultDiv = document.getElementById('result');
     if (bestChoices.length === 1) {
-        resultDiv.textContent = `Choice ${bestChoices[0]} is the best`;
+        resultDiv.textContent = `${bestChoices[0]} is the best`;
     } else {
-        resultDiv.textContent = `Choices ${bestChoices.join(', ')} are tied for the best`;
+        resultDiv.textContent = `${bestChoices.join(', ')} are tied for the best`;
     }
 }
-
 
 function addChoice() {
     var newSection = document.createElement("section");
     newSection.innerHTML = `
-      <h2>Choice ${document.querySelectorAll("section").length + 1}
+      <h2>
         <label for="choice${document.querySelectorAll("section").length + 1}_name">Name</label>
         <input id="choice${document.querySelectorAll("section").length + 1}_name" type="text" required>
       </h2>
