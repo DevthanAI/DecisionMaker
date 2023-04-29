@@ -54,10 +54,10 @@ function addChoice() {
             <input id="choice${document.querySelectorAll("section").length + 1}_pro_feat" type="text" required>
             <br/>
             <label for="choice${document.querySelectorAll("section").length + 1}_pro">Satisfaction Level</label>
-            <input id="choice${document.querySelectorAll("section").length + 1}_pro" type="range" min="0" max="10" required>
+            <input id="choice${document.querySelectorAll("section").length + 1}_pro" type="range" min="0" max="10">
             <br/>
             <label for="choice${document.querySelectorAll("section").length + 1}_pro_weight">Impact Level</label>
-            <input id="choice${document.querySelectorAll("section").length + 1}_pro_weight" type="range" min="0" max="10"" required>
+            <input id="choice${document.querySelectorAll("section").length + 1}_pro_weight" type="range" min="0" max="10">
         </div>
         </br>
         <div>
@@ -66,10 +66,10 @@ function addChoice() {
             <input id="choice${document.querySelectorAll("section").length + 1}_con_feat" type="text" required>
             <br/>
             <label for="choice${document.querySelectorAll("section").length + 1}_con">Dissatisfaction Level</label>
-            <input id="choice${document.querySelectorAll("section").length + 1}_con" type="range" min="0" max="10" required>
+            <input id="choice${document.querySelectorAll("section").length + 1}_con" type="range" min="0" max="10">
             <br/>
             <label for="choice${document.querySelectorAll("section").length + 1}_con_weight">Impact Level</label>
-            <input id="choice${document.querySelectorAll("section").length + 1}_con_weight" type="range" min="0" max="10" required>
+            <input id="choice${document.querySelectorAll("section").length + 1}_con_weight" type="range" min="0" max="10">
         </div>
       </div>
     `;
