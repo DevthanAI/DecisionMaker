@@ -42,30 +42,33 @@ function submitForm() {
 function addChoice() {
     var newSection = document.createElement("section");
     newSection.innerHTML = `
+    <br/>
+    <hr>
       <h2>
-        <label for="choice${document.querySelectorAll("section").length + 1}_name">Name</label>
-        <input id="choice${document.querySelectorAll("section").length + 1}_name" type="text" required>
+        <input id="choice${document.querySelectorAll("section").length + 1}_name" type="text" placeholder="Type choice name ..." required>
       </h2>
       <div>
         <div>
-            <label for="choice${document.querySelectorAll("section").length + 1}_pro_feat">What's good about this?</label>
+            <br/>
+            <label for="choice${document.querySelectorAll("section").length + 1}_pro_feat">Pros</label>
             <input id="choice${document.querySelectorAll("section").length + 1}_pro_feat" type="text" required>
             <br/>
-            <label for="choice${document.querySelectorAll("section").length + 1}_pro">How good?</label>
+            <label for="choice${document.querySelectorAll("section").length + 1}_pro">Satisfaction Level</label>
             <input id="choice${document.querySelectorAll("section").length + 1}_pro" type="range" min="0" max="10" required>
             <br/>
-            <label for="choice${document.querySelectorAll("section").length + 1}_pro_weight">How much of a big deal is this?</label>
+            <label for="choice${document.querySelectorAll("section").length + 1}_pro_weight">Impact Level</label>
             <input id="choice${document.querySelectorAll("section").length + 1}_pro_weight" type="range" min="0" max="10"" required>
         </div>
         </br>
         <div>
-            <label for="choice${document.querySelectorAll("section").length + 1}_con_feat">What's bad about this?</label>
+            <br/>
+            <label for="choice${document.querySelectorAll("section").length + 1}_con_feat">Cons</label>
             <input id="choice${document.querySelectorAll("section").length + 1}_con_feat" type="text" required>
             <br/>
-            <label for="choice${document.querySelectorAll("section").length + 1}_con">How bad?</label>
+            <label for="choice${document.querySelectorAll("section").length + 1}_con">Dissatisfaction Level</label>
             <input id="choice${document.querySelectorAll("section").length + 1}_con" type="range" min="0" max="10" required>
             <br/>
-            <label for="choice${document.querySelectorAll("section").length + 1}_con_weight">How much of a big deal is this?</label>
+            <label for="choice${document.querySelectorAll("section").length + 1}_con_weight">Impact Level</label>
             <input id="choice${document.querySelectorAll("section").length + 1}_con_weight" type="range" min="0" max="10" required>
         </div>
       </div>
