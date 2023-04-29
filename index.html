@@ -5,25 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Help Me Decide!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>Decision Maker</title>
 </head>
 
 <body>
     <header>
-        <h1>Help Me Decide!</h1>
+        <h1>Decision Maker</h1>
     </header>
 
     <main>
         <form id="myForm">
             <section>
                 <h2>
-                    <input id="choice1_name" type="text" placeholder="Type choice name ..." required>
+                    <input class="choice-name" id="choice1_name" type="text" placeholder="Type choice name ..."
+                        required>
                 </h2>
                 <div>
                     <div>
                         <br />
                         <label for="choice1_pro_feat">Pros </label>
-                        <input id="choice1_pro_feat" type="text" required>
+                        <input class="choice-list" id="choice1_pro_feat" type="text">
                         <br />
                         <label for="choice1_pro">Satisfaction Level</label>
                         <input id="choice1_pro" type="range" min="0" max="10">
@@ -43,7 +47,7 @@
                     <div>
                         <br />
                         <label for="choice1_con_feat">Cons</label>
-                        <input id="choice1_con_feat" type="text" required>
+                        <input class="choice-list" id="choice1_con_feat" type="text">
                         <br />
                         <label for="choice1_con">Dissatisfaction Level</label>
                         <input id="choice1_con" type="range" min="0" max="10">

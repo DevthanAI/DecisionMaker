@@ -57,13 +57,13 @@ function addChoice() {
     <br/>
     <hr>
       <h2>
-        <input id="choice${document.querySelectorAll("section").length + 1}_name" type="text" placeholder="Type choice name ..." required>
+        <input class="choice-name" id="choice${document.querySelectorAll("section").length + 1}_name" type="text" placeholder="Type choice name ..." required>
       </h2>
       <div>
         <div>
             <br/>
             <label for="choice${document.querySelectorAll("section").length + 1}_pro_feat">Pros</label>
-            <input id="choice${document.querySelectorAll("section").length + 1}_pro_feat" type="text" required>
+            <input class="choice-list" id="choice${document.querySelectorAll("section").length + 1}_pro_feat" type="text">
             <br/>
             <label for="choice${document.querySelectorAll("section").length + 1}_pro">Satisfaction Level</label>
             <input id="choice${document.querySelectorAll("section").length + 1}_pro" type="range" min="0" max="10">
@@ -83,7 +83,7 @@ function addChoice() {
         <div>
             <br/>
             <label for="choice${document.querySelectorAll("section").length + 1}_con_feat">Cons</label>
-            <input id="choice${document.querySelectorAll("section").length + 1}_con_feat" type="text" required>
+            <input class="choice-list" id="choice${document.querySelectorAll("section").length + 1}_con_feat" type="text">
             <br/>
             <label for="choice${document.querySelectorAll("section").length + 1}_con">Dissatisfaction Level</label>
             <input id="choice${document.querySelectorAll("section").length + 1}_con" type="range" min="0" max="10">

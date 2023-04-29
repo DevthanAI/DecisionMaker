@@ -1,5 +1,8 @@
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
     background-color: #f5f5f5;
 }
 
@@ -26,8 +29,8 @@ form {
 input {
     border: none;
     border-radius: 5px;
+    margin-left: 10px;
     margin-bottom: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 button {
@@ -43,6 +46,7 @@ button {
 img {
     width: 16px;
     height: 16px;
+    opacity: 0.25;
 }
 
 #result {
@@ -51,6 +55,23 @@ img {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background-color: #fff;
+}
+
+.choice-name {
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(167, 114, 252, 0.784);
+}
+
+.choice-list {
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .tooltip {
