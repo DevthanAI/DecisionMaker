@@ -67,9 +67,17 @@ function addChoice() {
             <br/>
             <label for="choice${document.querySelectorAll("section").length + 1}_pro">Satisfaction Level</label>
             <input id="choice${document.querySelectorAll("section").length + 1}_pro" type="range" min="0" max="10">
+            <span class="tooltip">
+                <img src="img/info.png" alt="Info">
+                <span class="tooltiptext">How much satisfaction do these pros give you?</span>
+            </span>
             <br/>
             <label for="choice${document.querySelectorAll("section").length + 1}_pro_weight">Impact Level</label>
             <input id="choice${document.querySelectorAll("section").length + 1}_pro_weight" type="range" min="0" max="10">
+            <span class="tooltip">
+                <img src="img/info.png" alt="Info">
+                <span class="tooltiptext">How much do these pros matter to you?</span>
+            </span>
         </div>
         </br>
         <div>
@@ -79,9 +87,17 @@ function addChoice() {
             <br/>
             <label for="choice${document.querySelectorAll("section").length + 1}_con">Dissatisfaction Level</label>
             <input id="choice${document.querySelectorAll("section").length + 1}_con" type="range" min="0" max="10">
+            <span class="tooltip">
+                <img src="img/info.png" alt="Info">
+                <span class="tooltiptext">How much dissatisfaction do these cons give you?</span>
+            </span>
             <br/>
             <label for="choice${document.querySelectorAll("section").length + 1}_con_weight">Impact Level</label>
             <input id="choice${document.querySelectorAll("section").length + 1}_con_weight" type="range" min="0" max="10">
+            <span class="tooltip">
+                <img src="img/info.png" alt="Info">
+                <span class="tooltiptext">How much do these cons matter to you?</span>
+            </span>
         </div>
       </div>
     `;
