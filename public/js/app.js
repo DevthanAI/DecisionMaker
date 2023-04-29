@@ -19,7 +19,6 @@ function submitForm() {
         }
     }
 
-
     const numChoices = document.querySelectorAll('section').length;
     const choices = [];
 
