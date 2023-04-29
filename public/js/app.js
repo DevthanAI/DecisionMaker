@@ -7,6 +7,19 @@ function submitForm() {
         con_weight: parseInt(document.getElementById(`${choice}_con_weight`).value)
     });
 
+    if (document.querySelectorAll('section').length < 2) {
+        alert('Please add at least two choices to compare.');
+        return;
+    }
+
+    for (let i = 1; i <= document.querySelectorAll('section').length; i++) {
+        if (document.getElementById(`choice${i}_name`).value === '') {
+            alert('Please fill in the name of the choice in each section.');
+            return;
+        }
+    }
+
+
     const numChoices = document.querySelectorAll('section').length;
     const choices = [];
 
