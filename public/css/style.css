@@ -31,7 +31,6 @@ form {
 input {
     border: none;
     border-radius: 5px;
-    padding: 8px;
     margin-bottom: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
